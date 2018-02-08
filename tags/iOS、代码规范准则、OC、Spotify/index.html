@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>微信消息防撤回 | 桑夏</title>
+  <title>Tag: iOS、代码规范准则、OC、Spotify | 桑夏</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="post-template">
+<body class="home-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -166,130 +166,69 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      
-<section id="intro">
-    <div class="container">
-        <div class="row col-md-offset-2">
-            <div class="col-md-8">
-    			<span class="post-meta">
-      <time datetime="2017-09-04T07:35:30.000Z" itemprop="datePublished">
-          2017-09-04
-      </time>
-    
-    
-    | 
-    <a href='https://aronx.github.io/tags/iOS逆向工程学习笔记/'>iOS逆向工程学习笔记</a>
-    
-    
-</span>
-                <h1>微信消息防撤回</h1>
+      <!-- ============================ Hero Image =========================== -->
+
+<section id="hero" class="scrollme">
+    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
+                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
+                    <div>
+                        
+                        <h2>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</h2>
+                        <p></p>
+                        
+                        <h2></h2>
+                        <p>每一个不曾起舞的日子都是对生命的辜负。</p>
+                        
+
+                    </div>
+                </div>
             </div>
+            <!-- // .col-md-12 -->
         </div>
-        <div class="col-md-8 col-md-offset-2">
-      		<h2 id="什么是逆向工程"><a href="#什么是逆向工程" class="headerlink" title="什么是逆向工程"></a>什么是逆向工程</h2><blockquote>
-<p>是一种产品设计技术再现过程，即对一项目标产品进行逆向分析及研究，从而演绎并得出该产品的处理流程、组织结构、功能特性及技术规格等设计要素。  </p>
-</blockquote>
-<p>简而言之，通过反编译等途径获取app的源码结构，进行分析或修改等从而达到某种目的。</p>
-<h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><h4 id="安全相关"><a href="#安全相关" class="headerlink" title="安全相关"></a>安全相关</h4><ul>
-<li>评定安全等级</li>
-<li>逆向恶意软件</li>
-<li>检查软件后门</li>
-<li>去除软件使用限制    </li>
-</ul>
-<h4 id="开发相关"><a href="#开发相关" class="headerlink" title="开发相关"></a>开发相关</h4><ul>
-<li>逆向系统API</li>
-<li>借鉴别人的软件</li>
-</ul>
-<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="1-敲壳"><a href="#1-敲壳" class="headerlink" title="1. 敲壳"></a>1. 敲壳</h3><blockquote>
-<p>上传到App Store的app都会经过苹果的一系列复杂的加密，不能直接对下载的文件进行解析,需要绕过app文件的加密机制。   </p>
-</blockquote>
-<h4 id="iOS-APP的签名原理"><a href="#iOS-APP的签名原理" class="headerlink" title="iOS APP的签名原理"></a>iOS APP的签名原理</h4><p><img src="https://ws1.sinaimg.cn/large/006tKfTcgy1fixa5u2xdlj31540rptc1.jpg" alt="">  </p>
-<h4 id="iOS开发者账号类别"><a href="#iOS开发者账号类别" class="headerlink" title="iOS开发者账号类别"></a>iOS开发者账号类别</h4><table>
-<thead>
-<tr>
-<th>个人开发者</th>
-<th>公司开发者</th>
-<th>企业开发者</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>账号申请速度快，无需公司注册信息</td>
-<td>账号申请速度慢，需要公司注册信息</td>
-<td>账号申请速度慢，需要公司注册信息</td>
-</tr>
-<tr>
-<td><strong><em>产品可以上架APP到App Store</em></strong></td>
-<td><strong><em>产品可以上架到App Store</em></strong></td>
-<td><strong><em>开发的app可以不经过苹果审核，直接分发给用户安装使用，不能上架App Store</em></strong></td>
-</tr>
-<tr>
-<td>产品开发者信息显示为个人信息，对公司和开发团队起不到宣传作用</td>
-<td>iTunes里可以查到公司信息及相关产品，宣传效果不错</td>
-<td>通过官网、PP助手等三方渠道分发软件</td>
-</tr>
-<tr>
-<td><strong>无法创建团队，添加团队成员至开发者账号</strong></td>
-<td><strong>可以创建团队，邀请成员共同管理账号信息</strong></td>
-<td><strong>可以创建团队，邀请成员共同管理账号信息</strong></td>
-</tr>
-<tr>
-<td>99<code>$</code>/<code>year</code></td>
-<td>99<code>$</code>/<code>year</code></td>
-<td>299<code>$</code>/<code>year</code></td>
-</tr>
-</tbody>
-</table>
-<h4 id="敲壳步骤"><a href="#敲壳步骤" class="headerlink" title="敲壳步骤"></a>敲壳步骤</h4><ul>
-<li><h5 id="在mac终端上通过ssh进入iPhone控制台"><a href="#在mac终端上通过ssh进入iPhone控制台" class="headerlink" title="在mac终端上通过ssh进入iPhone控制台"></a>在mac终端上通过ssh进入iPhone控制台</h5></li>
-</ul>
-<p><img src="https://ws4.sinaimg.cn/large/006tKfTcgy1fiypdito5ej30sa040dfv.jpg" alt="用`OpenSSH`通过ssh链接到iPhone控制台">  </p>
-<ul>
-<li><h5 id="查找到要砸壳软件的目录"><a href="#查找到要砸壳软件的目录" class="headerlink" title="查找到要砸壳软件的目录"></a>查找到要砸壳软件的目录</h5></li>
-</ul>
-<blockquote>
-<p>iOS中的文件夹是封闭的，程序运行在系统文件夹，是不能被查看到的</p>
-</blockquote>
-<p><img src="https://ws3.sinaimg.cn/large/006tKfTcgy1fiypkyulaxj30yg03iweu.jpg" alt="用`Cycript`查找到砸壳软件的文件目录">  </p>
-<ul>
-<li><h5 id="将可执行文件导出到电脑上"><a href="#将可执行文件导出到电脑上" class="headerlink" title="将可执行文件导出到电脑上"></a>将可执行文件导出到电脑上</h5></li>
-</ul>
-<blockquote>
-<p>iOS 软件在运行时是解密的<br>Mach-O文件包含了程序的基本信息和源码</p>
-</blockquote>
-<p><code>dumpdecrypted</code>可以在应用在运行时将<code>Mac OS</code>和<code>iOS</code>中的可执行文件<code>Mach-O</code>文件导出，<code>Mach-O</code>文件包含了软件的头文件和具体的执行代码。</p>
-<h3 id="2-反编译"><a href="#2-反编译" class="headerlink" title="2. 反编译"></a>2. 反编译</h3><h4 id="获取软件头文件"><a href="#获取软件头文件" class="headerlink" title="获取软件头文件"></a>获取软件头文件</h4><blockquote>
-<p>以OC语言开发的iOS程序，代码结构分为声明文件(头文件)和执行文件  </p>
-</blockquote>
-<p>使用<code>class-dump</code>命令可以对出砸壳出的解密文件进行解析，得到软件代码结构中的头文件，从而能了解到代码的结构框架和对外声明的方法。</p>
-<h4 id="还原源代码"><a href="#还原源代码" class="headerlink" title="还原源代码"></a>还原源代码</h4><blockquote>
-<p>以伪代码的形式最大程度的还原源代码  </p>
-</blockquote>
-<h3 id="3-修改源码"><a href="#3-修改源码" class="headerlink" title="3. 修改源码"></a>3. 修改源码</h3><h3 id="4-重签名"><a href="#4-重签名" class="headerlink" title="4. 重签名"></a>4. 重签名</h3><blockquote>
-<p>iOS App在安装到手机的时候会进行证书签名认证</p>
-</blockquote>
-<p>在之前的操作过程中，app的加密已经被破坏，这时候再重新打包是不能成功安装到手机中的，需要对app使用新的开发者证书重新签名。<br><strong><em>这种重签名的机制被广泛应用于各大APP助手平台以及破解软件中</em></strong></p>
-<h3 id="5-打包"><a href="#5-打包" class="headerlink" title="5.打包"></a>5.打包</h3>
-            <div class="clearfix"></div>
-            <hr class="nogutter">
-        </div>
-        <nav class="pagination" role="pagination">
-    
-    <a class="pull-left" href="https:/aronx.github.io/2018/02/08/Spotify代码规范准则翻译/" style="float: left;">
-        ← Spotify Objective-C 代码风格
-    </a>
-    
-    
-</nav>
-
-        <div class="duoshuo">
-
-
-</div>
+        <div class="herofade beige-dk"></div>
     </div>
 </section>
 
+<!-- Height spacing helper -->
+<div class="heightblock"></div>
+<!-- // End height spacing helper -->
 
+<!-- ============================ END Hero Image =========================== -->
+
+
+
+
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="row boxes">
+                    
+                    
+                        
+                        
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                            
+                              <h4 class="title"><a href="https://aronx.github.io/2018/02/08/Spotify代码规范准则翻译/">Spotify Objective-C 代码风格</a></h4>
+                            
+                            <p><time datetime="2018-02-08T03:32:30.000Z"><a href="https://aronx.github.io/2018/02/08/Spotify代码规范准则翻译/">2018-02-08</a></time></p>
+                        </div>
+                    
+                </div>
+            </div>    
+        </div>
+    </div>
+</section> 
+
+<section id="statement">
+    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
+        <div class="row">
+            <p>虽然还没想好写点什么，但是总觉得这里放句话比较和谐。</p>
+        </div>
+    </div>
+</section>
       
 <!-- ============================ Footer =========================== -->
 
